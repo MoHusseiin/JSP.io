@@ -1,0 +1,31 @@
+<taglib version="2.1" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema- instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web- jsptaglibrary_2_1.xsd">
+	<tlib-version>1.0</tlib-version>
+	<short-name>tlddemo</short-name>
+	<uri>http://java.sun.com/jsp/jstl/test</uri>
+	<tag>
+		<description>present current local date time.</description>
+		<name>currentDateTime</name>
+		<tag-class>com.wap.currentDateTime</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>color</name>
+			<required>false</required>
+			<!--rtexprvalue means Runtime Expression Value. It means the attribute can support scriptlet values.-->
+			<rtexprvalue>true</rtexprvalue>
+			<!--elexprvalue means it can support EL (expression language) values.-->
+			<elexprvalue>true</elexprvalue>
+		</attribute>
+		<attribute>
+			<name>size</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+<!--		<attribute>-->
+<!--			<name>text</name>-->
+<!--			<required>true</required>-->
+<!--			<rtexprvalue>true</rtexprvalue>-->
+<!--		</attribute>-->
+	</tag>
+</taglib>
